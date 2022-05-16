@@ -1,4 +1,53 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:black;font-family:arial;color:white}
 
+.maindiv {
+  display: grid;
+  width: 500px;
+  grid-template-columns: 3;
+  grid-template-rows: auto;
+   border-radius:25px;
+  background-color:white;
+  color:black;
+  padding:20px;
+}
 
+h1 {
+  grid-column: span 3;
+  color:grey;
+  font-family:verdana;
+}
+
+label:nth-of-type(3) {
+  grid-column: span 1 / 2;
+}
+
+button {
+  grid-column: span 1 / 2;
+  width:fit-content;
+}
+
+.maindiv > * {
+   text-align: center;
+   margin: 5px;
+}
+
+#years{
+  width:fit-content;
+}
+
+#result{
+  grid-column-start: span 2;
+  text-align: left;
+}
+
+#principal{
+  text-align: left;
+}
+
+footer {
+  grid-column: span 3; 
+}
+
+footer > p {
+  text-align: left;
+}
